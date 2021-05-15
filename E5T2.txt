@@ -1,0 +1,32 @@
+# Identify tools that will allow you to do the following:
+NESSUS
+Jenkins
+
+## Scan infrastructure as code templates
+
+infrastructure ip is 35.170.164.98
+
+### Example vulnerability
+
+Description
+This plugin is a SYN 'half-open' port scanner. It shall be reasonably quick even against a firewalled target.
+
+Note that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.
+
+
+##Scan AMI’s or containers for OS vulnerabilities
+[Thu May 13 08:23:27.047182 2021] [mpm_event:notice] [pid 8:tid 139644191552640] AH00489: Apache/2.4.46 (Unix) configured -- resuming normal operations
+
+### Example vulnerability
+[Thu May 13 08:23:27.047867 2021] [core:notice] [pid 8:tid 139644191552640] AH00094: Command line: 'httpd -D FOREGROUND'
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+NeSSUS performed scan of following ip 3.238.41.143
+Jenkins colected tesated information
+Information about AMI and related information including Scan infrastructure as code templates.
+Scan AMI’s or containers for OS vulnerabilities.
+Scan an AWS environment for cloud configuration vulnerabilities  past over pipeline to Devops, testing and management department
+### Example vulnerability
+no vulnerabilities were discovered
+
+Jenkins owns git repo where version control enabled for rollower porporse 

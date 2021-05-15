@@ -1,0 +1,9 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+Finding On instance i-067182179d0790107, TCP port 23 which is associated with 'Telnet' is reachable from the internet
+Severity High 
+Description 
+On this instance, TCP port 23, which is associated with Telnet, is reachable from the internet. You can install the Inspector agent on this instance and re-run the assessment to check for any process listening on this port. The instance i-067182179d0790107 is located in VPC vpc-03c19debfc6e06470 and has an attached ENI eni-0f6c9f22c5ab812bb which uses network ACL acl-0ec93d8382a463bfb. The port is reachable from the internet through Security Group sg-0c1fcaf1ceeb04f96 and IGW igw-071f553b97179cd96
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+You can edit the Security Group sg-0c1fcaf1ceeb04f96 to remove access from the internet on port 23

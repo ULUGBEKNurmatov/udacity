@@ -1,0 +1,10 @@
+
+# What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+Set the PASS_MIN_DAYS parameter to 7 in /etc/login.defs : PASS_MIN_DAYS 7 Modify user parameters for all users with a password set to match: # chage --mindays 7
+
+# Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+Not 100% , if to stop all updates and patch will need to kill all open conection and dedicate single conection to VPC not a good idea to preserv performance and system good health 
+# Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+if it decrypted as it planned without eye and fishinf posibilities then yes
+# What would happen if the original cloud formation templates are applied to this environment.
+Depend on how old and buggy they are

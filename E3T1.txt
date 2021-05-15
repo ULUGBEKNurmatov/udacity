@@ -1,0 +1,7 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+10.192.11.132 is performing SSH brute force attacks against i-067182179d0790107. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password.
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+ this finding can be remediated by securing your SSH port to only trusted IPs through Security Groups, ACLs, or firewalls
+
+API GeneratedFindingAPIName was used to access S3 Bucket GeneratedFindingS3Bucket from a remote host with IP address 198.51.100.0 that is potentially running the Parrot Security Linux penetration testing tool.
