@@ -1,0 +1,19 @@
+{
+  "Id": "Policy1621145083414",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1621145077567",
+      "Action": [
+        "s3:GetAccessPoint"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::cand-c3-secret-recipes-008589890778",
+      "Principal": {
+        "AWS": [
+          "S3BucketRecipesSecret"
+        ]
+      }
+    }
+  ]
+}
