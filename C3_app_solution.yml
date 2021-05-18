@@ -1,19 +1,32 @@
 {
-  "Id": "Policy1621145083414",
   "Version": "2012-10-17",
-  "Statement": [
+ "ingress": [
+                {
+                  "cidr_blocks": [
+                    "10.0.0.0/16"
+                  ],
+                  "from_port": "*",
+                  "protocol": "tcp",
+                  "to_port": 5000
+                }
+              ]
+
+ "Statement": [
     {
-      "Sid": "Stmt1621145077567",
+      "Sid": "Stmt1621203441504",
       "Action": [
-        "s3:GetAccessPoint"
+        "s3:GetAccessPointPolicy"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::cand-c3-free-recipes-008589890778"
+    },
+    {
+      "Sid": "Stmt1621204064022",
+      "Action": [
+        "s3:CreateAccessPoint"
       ],
       "Effect": "Deny",
-      "Resource": "arn:aws:s3:::cand-c3-secret-recipes-008589890778",
-      "Principal": {
-        "AWS": [
-          "S3BucketRecipesSecret"
-        ]
-      }
+      "Resource": "arn:aws:s3:::cand-c3-secret-recipes-008589890778"
     }
   ]
 }
